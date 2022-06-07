@@ -1,6 +1,6 @@
 # Nodejs_Azure_Project
 
-## Nodejs App for Creating Storage Account, Creating Container Data, Upload Image after checking for adult content and listing all files present in the given container
+## Nodejs App for Creating Storage Account, Creating Container, Upload Image after checking for adult content and listing all files present in the given container
 
 # Screenshots 
 <p float="center">
