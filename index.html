@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Azure Nodejs App</title>
+	<style>
+    h1 {
+    	text-align:center;
+	}
+	body {
+		background-color: #8F00FF;
+		background-repeat: no-repeat;
+		background-attachment: fixed; 
+		background-size: 100% 100%;
+	}
+	.invisible {
+		display: none;
+		visibility: hidden;
+   	}
+	input[type=text], select {
+ 		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #ccc;
+  		border-radius: 4px;
+  		box-sizing: border-box;
+	}
+	button[type=submit] {
+  		width: 100%;
+  		background-color: #373771;
+  		color: white;
+  		padding: 14px 20px;
+  		margin: 8px 0;
+  		border: none;
+  		border-radius: 4px;
+  		cursor: pointer;
+	}
+	button[type=submit]:hover {
+ 		background-color: #45a049;
+	}
+	</style>
+</head>
+
+<body>
+	<br>
+    <h1 style="background-color:powderblue;">Azure Nodejs App</h1>
+    <br>
+	
+
+    <form action="/" method="post" id="form1">
+		<input type="text" name="StorageAccName" placeholder="Enter Storage Account Name">
+		<button type="submit" id="postback1" name="cmd" value="StorageAcc">Create New Storage Account</button>
+		<input type="reset" value="Reset" style="background-color: red;  color: white" />
+	</form>
+	<br>
+	<br>
+	<form action="/" method="post" id="form2">
+		<input type="text" name="StorageAccName" placeholder="Enter Storage Account Name">
+		<input type="text" name="ContainerName" placeholder="Enter Container Name">
+		<button type="submit" id="postback2" name="cmd" value="Container">Create New Container</button>
+		<input type="reset" value="Reset" style="background-color: red;  color: white" />
+	</form>
+	<br>
+	<br>
+	<form action="/" method="post" id="form3">
+		<input type="text" name="StorageAccName" placeholder="Enter Storage Account Name">
+		<input type="text" name="ContainerName" placeholder="Enter Container Name">
+		<input type="text" name="filepath" placeholder="Enter File Path">
+		<button type="submit" id="postback3" name="cmd" value="UploadBlob">Upload File to Container</button></a>
+		<input type="reset" value="Reset" style="background-color: red;  color: white" />
+	</form>
+	<br>
+	<br>
+	<form action="/" method="post" id="form4">
+		<input type="text" name="StorageAccName" placeholder="Enter Storage Account Name">
+		<input type="text" name="ContainerName" placeholder="Enter Container Name">
+		<button type="submit" id="postback3" name="cmd" value="ListBlobs">List Files in container</button>
+		<input type="reset" value="Reset" style="background-color: red;  color: white" />
+	</form>
+	<br>
+	<br>    
+
+</body>
+
+</html>
